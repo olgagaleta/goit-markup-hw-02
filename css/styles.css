@@ -55,7 +55,6 @@
 
   font-family: inherit;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
 }
@@ -66,6 +65,8 @@
 
 .link {
   color: var(--primary-text-color);
+
+  font-weight: 500;
 }
 
 .link:hover,
@@ -73,7 +74,10 @@
   color: #2196f3;
 }
 
-.secondary-link {
+.body .first-link {
+  color: var(--accent-color);
+}
+.project-link {
   text-decoration: none;
 }
 
@@ -83,30 +87,36 @@
   background-color: #2f303a;
 }
 .hero-title {
-  color: #fff;
+  color: var(--secondary-bg-color);
 
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* Section */
 .section-title {
   color: var(--title-text-color);
 
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 
-.secondary-title {
+.project-title {
   color: var(--title-text-color);
-  font-weight: 700;
+ 
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+
+.features-title {
+  visibility: hidden
 }
 
 .special {
@@ -117,8 +127,7 @@
   color: var(--primary-text-color);
 }
 
-.secondary-text {
-  font-weight: 400;
+.project-text {
   font-size: 16px;
   line-height: 1.88;
 }
@@ -128,7 +137,6 @@
 .features .title {
   color: var(--title-text-color);
 
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -136,24 +144,34 @@
 
 /* Card */
 
-.card {
+.team {
   background-color: var(--secondary-bg-color);
 }
 
-.card .title {
+.team .title {
+  color: var(--title-text-color);
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19px;
+}
+
+.team .text {
+  font-size: 16px;
 }
 
 /* Button */
 
 .button {
   color: var(--title-text-color);
-  background-color: #2196f3;
 
   font-family: inherit;
   cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--accent-color);
 }
 
 .hero > button {
@@ -187,6 +205,10 @@
 
 .address {
   font-style: normal;
+}
+
+.footer .list-address {
+  color: var(--secondary-bg-color);
 }
 
 .link-address {
