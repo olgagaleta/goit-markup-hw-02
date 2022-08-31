@@ -67,6 +67,7 @@
   color: var(--primary-text-color);
 
   font-weight: 500;
+  text-decoration: none;
 }
 
 .link:hover,
@@ -77,6 +78,7 @@
 .body .first-link {
   color: var(--accent-color);
 }
+
 .project-link {
   text-decoration: none;
 }
@@ -109,14 +111,23 @@
 
 .project-title {
   color: var(--title-text-color);
- 
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.features-title {
-  visibility: hidden
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .special {
@@ -171,7 +182,8 @@
 
 .button:hover,
 .button:focus {
-  color: var(--accent-color);
+  color: var(--secondary-bg-color);
+  background-color: var(--accent-color);
 }
 
 .hero > button {
@@ -187,7 +199,10 @@
   text-align: center;
   letter-spacing: 0.06em;
 }
-
+.primary {
+  color: var(--secondary-bg-color);
+  background-color: var(--accent-color);
+}
 .button .secondary {
   color: var(--title-text-color);
   font-weight: 500;
